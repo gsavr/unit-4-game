@@ -1,0 +1,84 @@
+html body{
+    align-content: center; 
+    background-image: url("../images/background_1.png"); 
+    background-size: 2800px 2000px; 
+    background-attachment: fixed;
+}
+
+.jumbotron{
+    background-image: url("../images/back_silver.png");
+    opacity: .7;
+    padding: 10px;
+}
+
+#game-title{
+    font-size: 40px;
+}
+
+.headpic{
+    margin-top:20px;
+
+}
+
+p.lead{
+    padding-top:10px;
+}
+
+#game-title{
+    margin-bottom: 0;
+    font-family: 'Kaushan Script', cursive;
+    
+}
+
+.gamecontent{
+    background-image: url("../images/back_silver_darker.png"); 
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: 'Exo 2', sans-serif;
+    margin-bottom: 30px;
+}
+
+#winningNumber{
+    font-size: 35px;
+}
+
+#score{
+    font-size: 30px;
+}
+
+.gamepic{
+    background-color: aliceblue;
+    border-radius: 30px;
+}
+
+.Number{
+    background-color: aliceblue;
+    border-radius: 15px;
+    margin:10px;
+    font-size: 20px;
+    padding:5px
+}
+
+#gamepic3{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 760px) {
+    .gamepic{
+      width: 100px;
+    }
+
+    
+}
+@media screen and (max-width: 640px) {
+    .headpic{
+      display: none;
+    }
+
+    .gamepic{
+        width: 90px;
+        
+      }
+    
+}
