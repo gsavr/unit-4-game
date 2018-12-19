@@ -29,5 +29,86 @@ function Start(){
     console.log(p4Score);
 }
 
-
 Start();
+
+$("#gamepic1").on("click", function() {
+    playerScore = p1Score + playerScore;
+
+    console.log(playerScore);
+
+    $("#score").text(playerScore);
+
+    if(playerScore===winningNumber){
+        win();
+    }
+
+    else if(playerScore > winningNumber){
+        lose ()
+    }
+    
+});
+
+$("#gamepic2").on("click", function() {
+    playerScore = p2Score + playerScore;
+
+    console.log(playerScore);
+    
+    $("#score").text(playerScore);
+
+    if(playerScore===winningNumber){
+        win();
+    }
+
+    else if(playerScore > winningNumber){
+        lose ()
+    }
+    
+});
+
+$("#gamepic3").on("click", function() {
+    playerScore = p3Score + playerScore;
+
+    console.log(playerScore);
+    
+    $("#score").text(playerScore);
+
+    if(playerScore===winningNumber){
+        win();
+    }
+
+    else if(playerScore > winningNumber){
+        lose ()
+    }
+    
+});
+
+$("#gamepic4").on("click", function() {
+    playerScore = p4Score + playerScore;
+
+    console.log(playerScore);
+    
+    $("#score").text(playerScore);
+
+    if(playerScore===winningNumber){
+        win();
+    }
+
+    else if(playerScore > winningNumber){
+        lose ()
+    }
+    
+});
+
+function win(){
+    alert("Congratulations! You Won! You reached " + winningNumber);
+    wins++
+    $("#wins").text(wins);
+    Start();
+}
+
+function lose (){
+    alert("You Lose! You went past " + winningNumber);
+    losses++
+    $("#losses").text(losses);
+    Start();
+}
