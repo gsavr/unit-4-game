@@ -16,10 +16,10 @@ function Start(){
 
     $("#winningNumber").text(winningNumber); // write winning number to html
 
-    p1Score = Math.floor(Math.random() * 12 + 1); // choose random number bet 19-120
-    p2Score = Math.floor(Math.random() * 12 + 1); // choose random number bet 19-120
-    p3Score = Math.floor(Math.random() * 12 + 1); // choose random number bet 19-120
-    p4Score = Math.floor(Math.random() * 12 + 1); // choose random number bet 19-120
+    p1Score = Math.floor(Math.random() * 12 + 1); // choose random number bet 1-12
+    p2Score = Math.floor(Math.random() * 12 + 1); 
+    p3Score = Math.floor(Math.random() * 12 + 1); 
+    p4Score = Math.floor(Math.random() * 12 + 1); 
 
     console.log(winningNumber);
     console.log(playerScore);
@@ -100,10 +100,14 @@ $("#gamepic4").on("click", function() {
 });
 
 function win(){
-    alert("Congratulations! You Won! You reached " + winningNumber);
+    setTimeout(function() {
+        alert("Congratulations! You Won! You reached " + winningNumber);
+    }, 200);
     wins++
     $("#wins").text(wins);
-    Start();
+    setTimeout(function() {
+        Start();
+    }, 500);
 }
 
 function lose (){
